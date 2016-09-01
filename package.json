@@ -1,0 +1,19 @@
+{
+  "name": "inflation-api",
+  "version": "0.0.1",
+  "description": "an api for calculating inflation values over time",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "inflation",
+    "economics",
+    "prices",
+    "gdp",
+    "cpi",
+    "purchasing"
+  ],
+  "author": "james johnson",
+  "license": "MIT"
+}
