@@ -107,20 +107,16 @@ module.exports = {
       2016: 241.04
     }
 
-    // startDate (start), targetDate (target), value (value)
-    // let startDate  = Number.parseInt(req.query.start);
-    let targetDate = Number.parseInt(req.query.target);
-    let value      = Number.parseFloat(req.query.value);
-
+    // targetDate (target), value (value)
+    let targetDate     = Number.parseInt(req.query.target);
+    let value          = Number.parseFloat(req.query.value);
     let responseObject = {}
 
     responseObject["adjustedValue"] = Number.parseFloat(
       (value * CPI[2016]/CPI[targetDate]).toFixed(2)
     )
 
-    res.inflationAdjusted = {
-      response: responseObject
-      }
+    res.inflationAdjusted = {response: responseObject}
     next()
   }
 }
