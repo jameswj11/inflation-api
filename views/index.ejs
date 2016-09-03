@@ -15,5 +15,29 @@
     Consumer Price Index data is sourced from the <a href="https://www.minneapolisfed.org/community/teaching-aids/cpi-calculator-information/consumer-price-index-and-inflation-rates-1913">Federal Reserve Bank of Minneapolis</a>.
     </h3>
   </div>
+  <h2>ENDPOINT</h2>
+  <div class="wrapper">
+  <h3>
+      The endpoint for Consumer Price Index calculations is"
+      <br><br>
+      localhost:3000/api/cpi
+  </h3>
+  </div>
+  <h2>PARAMETERS</h2>
+  <div class="wrapper">
+    <h3>
+      <ul>
+        <li>value (0-9)</li>
+        <li>year (1913-2016)</li>
+      </ul>
+      'Value' is the USD($) value to be adjusted for inflation.
+      <br/><br/>
+      'Year' is the desired year to adjust for inflation (ex: 1955).
+      <br/><br/>
+      To see the relative value of $100 in 1955, an example GET request would be:
+      <br/><br/>
+      localhost:3000/api/cpi/?value=100&year=1955
+    </h3>
+  </div>
 </body>
 </html>

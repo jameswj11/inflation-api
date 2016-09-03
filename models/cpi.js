@@ -108,7 +108,7 @@ module.exports = {
     }
 
     // targetDate (target), value (value)
-    let targetDate     = Number.parseInt(req.query.target);
+    let targetDate     = Number.parseInt(req.query.year);
     let value          = Number.parseFloat(req.query.value);
     let responseObject = {}
 
