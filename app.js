@@ -10,7 +10,10 @@ const apiRoute   = require('./routes/api')
 //set up server
 const app  = express()
 const PORT = process.env.PORT || process.argv[2] || 3000;
-app.listen(PORT, ()=>{console.log('server started on port', PORT)})
+
+app.listen(PORT, ()=>{
+  console.log('server started on port', PORT)
+})
 
 //logging
 app.use(logger('dev'))
