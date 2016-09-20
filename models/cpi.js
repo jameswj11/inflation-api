@@ -6,8 +6,11 @@ module.exports = {
     let value          = Number.parseFloat(req.query.value);
     let responseObject = {}
 
+    responseObject["measure"] = 'Consumer Price Index (CPI)';
+    responseObject["format"] = 'JSON'
     responseObject["startValue"] = value;
     responseObject["targetYear"] = date;
+
     responseObject["adjustedValue"] = Number.parseFloat(
       (value * CPI[2016]/CPI[date]).toFixed(2)
     )
