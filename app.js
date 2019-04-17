@@ -1,5 +1,6 @@
 'use strict'
 const express    = require('express')
+const cors       = require('cors')
 const logger     = require('morgan')
 const path       = require('path')
 const bodyParser = require('body-parser')
@@ -14,6 +15,9 @@ const PORT = process.env.PORT || process.argv[2] || 3000;
 app.listen(PORT, ()=>{
   console.log('server started on port', PORT)
 })
+
+//CORS
+app.use(cors())
 
 //logging
 app.use(logger('dev'))
