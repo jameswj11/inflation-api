@@ -12,7 +12,7 @@ module.exports = {
     responseObject["targetYear"] = date;
 
     responseObject["adjustedValue"] = Number.parseFloat(
-      (value * CPI[2018]/CPI[date]).toFixed(2)
+      (value * CPI[2019]/CPI[date]).toFixed(2)
     )
 
     res.inflationAdjusted = {response: responseObject}
